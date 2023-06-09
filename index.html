@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎂王阿姨生日快樂🎂</title>
+    <title>🎂王阿姨HBD🎂</title>
     <link rel="icon" type="image/png" href="source/party-hat.png">
 </head>
 
@@ -32,7 +32,9 @@
 
     html,
     body {
+        max-width: 600px;
         height: 100%;
+        margin: 0 auto
     }
 
     .main {
@@ -41,7 +43,7 @@
         background-image: url(source/bk.png);
         background-position: center center;
         background-size: 100%;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
     }
 
     .part {
@@ -53,6 +55,7 @@
     }
 
     .part img {
+        animation: zoom 5s ease-in-out infinite;
         width: 60%;
         margin: auto;
     }
@@ -72,8 +75,23 @@
     }
 
     .part2 img {
+        animation: zoom 5s ease-in-out infinite;
         width: 60%;
         margin: 0 auto;
+    }
+
+    @keyframes zoom {
+        0% {
+            width: 60%;
+        }
+
+        50% {
+            width: 63%;
+        }
+
+        100% {
+            width: 60%;
+        }
     }
 </style>
 
